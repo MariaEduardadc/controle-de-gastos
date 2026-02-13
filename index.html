@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+        Controle de Gastos
+    </title>
+    <link rel="stylesheet" href="style.css">
+     
+
+  </head>
+  <body>
+    <div class="container">
+        <h1>Controle do Cartão</h1>
+        <input id="nome" placeholder="Quem gastou? (ariana/maria)">
+        <input id="produto" placeholder="Produto">
+        <input id="valor" type="number" placeholder="Valor">
+
+        <button onclick="adicionarGasto()">Adicionar</button>
+         <button onclick="limparDados()">Apagar tudo</button>
+        <hr>
+
+        <h2>Total maria: R$ <span id="totalmaria">0</span></h2>
+
+        <h2>Total ariana: R$ <span id="totalariana">0</span></h2>
+
+        <h2>Total geral: R$ <span id="totalgeral">0</span></h2>
+        
+         <h3>Compras Ariana</h3>
+         <ul id="listaariana"></ul>
+         <h3>Compras Maria</h3>
+         <ul id="listamaria"></ul>
+        
+        </div>
+       
+       
+      <script src="script.js"></script>   
+  </body>
+   </html> 
